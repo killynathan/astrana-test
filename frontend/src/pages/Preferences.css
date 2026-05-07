@@ -1,0 +1,141 @@
+.prefs-page {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 48px 40px;
+  overflow-y: auto;
+}
+
+.prefs-card {
+  max-width: 520px;
+}
+
+.prefs-card h2 {
+  font-size: 1.3rem;
+  margin-bottom: 6px;
+}
+
+.prefs-subtitle {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 28px;
+}
+
+/* Mode options */
+.prefs-options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.prefs-option {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: border-color 0.15s;
+}
+
+.prefs-option-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.prefs-suboption {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--brand-border);
+  cursor: default;
+}
+
+.prefs-option input[type="radio"] {
+  margin-top: 2px;
+  accent-color: var(--brand);
+  flex-shrink: 0;
+}
+
+.prefs-option.selected {
+  border-color: var(--brand);
+  background: var(--brand-bg);
+}
+
+.prefs-option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.prefs-option-title {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.prefs-option-desc {
+  font-size: 0.82rem;
+  color: #777;
+}
+
+.prefs-section-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+/* Channel group */
+.prefs-group {
+  margin-bottom: 28px;
+}
+
+.prefs-group-label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.tz-select {
+  width: 100%;
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.tz-select:focus {
+  outline: none;
+  border-color: var(--brand);
+}
+
+/* Footer */
+.prefs-footer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.save-btn {
+  padding: 9px 20px;
+  background: var(--brand);
+  color: var(--text-on-dark);
+  border: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.save-btn:hover {
+  background: var(--brand-hover);
+}
+
+.save-confirm {
+  font-size: 0.85rem;
+  color: var(--brand);
+  font-weight: 500;
+}

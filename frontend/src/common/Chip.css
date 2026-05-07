@@ -1,0 +1,39 @@
+.chip-row {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border: 1px solid #e5e5e5;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.chip input[type="checkbox"],
+.chip input[type="radio"] {
+  display: none;
+}
+
+.chip.active {
+  border-color: var(--brand);
+  background: var(--brand-bg);
+  color: var(--brand);
+  font-weight: 500;
+}
+
+.chip-hint {
+  font-size: 0.75rem;
+  color: #999;
+  margin-left: 2px;
+}
+
+.chip.active .chip-hint {
+  color: #a0567e;
+}
